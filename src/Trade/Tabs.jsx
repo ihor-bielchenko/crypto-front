@@ -1,0 +1,49 @@
+import React from 'react';
+
+export default getLang([
+	DATE_1H,
+	DATE_3H,
+	DATE_6H,
+	DATE_12H,
+	DATE_24H,
+	DATE_48H,
+	DATE_1W,
+	DATE_2W,
+	DATE_1M,
+	DATE_3M,
+	DATE_6M,
+])(React.memo((props) => <>
+	<Button>
+		{props[DATE_1H]}
+	</Button>
+	<Button>
+		{props[DATE_3H]}
+	</Button>
+	<Button>
+		{props[DATE_6H]}
+	</Button>
+	<Button>
+		{props[DATE_12H]}
+	</Button>
+	<Button>
+		{props[DATE_24H]}
+	</Button>
+	<Button>
+		{props[DATE_48H]}
+	</Button>
+	<Button>
+		{props[DATE_1W]}
+	</Button>
+	<Button>
+		{props[DATE_2W]}
+	</Button>
+	<Button>
+		{props[DATE_1M]}
+	</Button>
+	<Button>
+		{props[DATE_3M]}
+	</Button>
+	<Button>
+		{props[DATE_6M]}
+	</Button>
+</>));
