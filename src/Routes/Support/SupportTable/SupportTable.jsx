@@ -4,11 +4,7 @@ export default () => {
   return (
     <Table>
       {DataTable.map((row) => (
-        <Row>
-          {row.map(data) => (
-            <Cell>{data}</Cell>;
-          )}
-        </Row>  
+        <Row />
       ))}
     </Table>
   );
